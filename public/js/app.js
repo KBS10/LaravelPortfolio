@@ -143,6 +143,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HeaderComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderComponent */ "./resources/js/components/HeaderComponent.vue");
+/* harmony import */ var _HomeComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeComponent */ "./resources/js/components/HomeComponent.vue");
+/* harmony import */ var _MyProjectComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MyProjectComponent */ "./resources/js/components/MyProjectComponent.vue");
+/* harmony import */ var _UseTechComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UseTechComponent */ "./resources/js/components/UseTechComponent.vue");
+/* harmony import */ var _AboutComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AboutComponent */ "./resources/js/components/AboutComponent.vue");
+/* harmony import */ var _ContactUsComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContactUsComponent */ "./resources/js/components/ContactUsComponent.vue");
 //
 //
 //
@@ -156,21 +162,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    HeaderComponent: _HeaderComponent__WEBPACK_IMPORTED_MODULE_0__["default"],
+    HomeComponent: _HomeComponent__WEBPACK_IMPORTED_MODULE_1__["default"],
+    MyProjectComponent: _MyProjectComponent__WEBPACK_IMPORTED_MODULE_2__["default"],
+    UseTechComponent: _UseTechComponent__WEBPACK_IMPORTED_MODULE_3__["default"],
+    AboutComponent: _AboutComponent__WEBPACK_IMPORTED_MODULE_4__["default"],
+    ContactUsComponent: _ContactUsComponent__WEBPACK_IMPORTED_MODULE_5__["default"]
+  },
   name: "FullComponent",
   data: function data() {
     return {
       options: {
         licenseKey: '',
         menu: "#menu",
-        anchors: ['page1', 'page2', 'page3'],
-        sectionsColor: ['#41b883', '#ff5f45', '#0798ec']
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#ffffff', '#ff5f45']
       }
     };
   },
   mounted: function mounted() {
     console.log('full-page mounted.');
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
@@ -300,7 +332,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#HeaderComponent{\n    position: fixed;\n    top: 0;\n    width: 100%;\n    background: #000000;\n}\na{\n    text-decoration: none;\n}\nnav {\n    display: flex;\n    justify-content: space-between;\n}\n.logo {\n    font-size: 2rem;\n    display: inline-block;\n    padding: 0 20px;\n    margin-left: 20px;\n    background: #F35B66;\n    color: #fff;\n    transition: all .2s;\n}\nul {\n    list-style: none;\n    display: flex;\n    padding: 0 10px;\n    transition: margin .2s;\n}\nli:not(:last-child) {\n    margin-right: 20px;\n}\nli a {\n    color: white;\n    display: block;\n    padding: 10px 20px;\n}\nli a:hover{\n    color: #F35B66;\n}\n\n", ""]);
+exports.push([module.i, "\n#HeaderComponent{\n    position: fixed;\n    top: 0;\n    width: 100%;\n    background: #000000;\n    z-index: 1000;\n}\na{\n    text-decoration: none;\n}\nnav {\n    display: flex;\n    justify-content: space-between;\n}\n.logo {\n    font-size: 2rem;\n    display: inline-block;\n    padding: 0 20px;\n    margin-left: 20px;\n    /*background: #F35B66;*/\n    color: #fff;\n    transition: all .2s;\n}\nul {\n    list-style: none;\n    display: flex;\n    padding: 0 10px;\n    transition: margin .2s;\n}\nli:not(:last-child) {\n    margin-right: 20px;\n}\nli a {\n    color: white;\n    display: block;\n    padding: 10px 20px;\n}\nli a:hover{\n    color: #F35B66;\n}\n\n", ""]);
 
 // exports
 
@@ -1912,17 +1944,21 @@ var render = function() {
     "div",
     { attrs: { id: "FullComponent" } },
     [
+      _c("HeaderComponent"),
+      _vm._v(" "),
       _c(
         "full-page",
         { ref: "fullpage", attrs: { options: _vm.options, id: "fullpage" } },
         [
-          _c("div", { staticClass: "section" }, [
-            _vm._v("\n            First Section ...\n        ")
-          ]),
+          _c("div", { staticClass: "section" }, [_c("HomeComponent")], 1),
           _vm._v(" "),
-          _c("div", { staticClass: "section" }, [
-            _vm._v("\n            Second section....\n        ")
-          ])
+          _c("div", { staticClass: "section" }, [_c("MyProjectComponent")], 1),
+          _vm._v(" "),
+          _c("div", { staticClass: "section" }, [_c("UseTechComponent")], 1),
+          _vm._v(" "),
+          _c("div", { staticClass: "section" }, [_c("AboutComponent")], 1),
+          _vm._v(" "),
+          _c("div", { staticClass: "section" }, [_c("ContactUsComponent")], 1)
         ]
       )
     ],
@@ -1958,23 +1994,33 @@ var render = function() {
       _c("div", { attrs: { id: "Header" } }, [
         _c("ul", { attrs: { id: "menu_bar" } }, [
           _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.items[0]))])
+            _c("a", { attrs: { href: "#page1" } }, [
+              _vm._v(_vm._s(_vm.items[0]))
+            ])
           ]),
           _vm._v(" "),
           _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.items[1]))])
+            _c("a", { attrs: { href: "#page2" } }, [
+              _vm._v(_vm._s(_vm.items[1]))
+            ])
           ]),
           _vm._v(" "),
           _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.items[2]))])
+            _c("a", { attrs: { href: "#page3" } }, [
+              _vm._v(_vm._s(_vm.items[2]))
+            ])
           ]),
           _vm._v(" "),
           _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.items[3]))])
+            _c("a", { attrs: { href: "#page4" } }, [
+              _vm._v(_vm._s(_vm.items[3]))
+            ])
           ]),
           _vm._v(" "),
           _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.items[4]))])
+            _c("a", { attrs: { href: "#page5" } }, [
+              _vm._v(_vm._s(_vm.items[4]))
+            ])
           ])
         ])
       ])
@@ -1987,7 +2033,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", [
-      _c("a", { staticClass: "logo", attrs: { href: "#" } }, [_vm._v(" Logo ")])
+      _c("a", { staticClass: "logo", attrs: { href: "#page1" } }, [
+        _vm._v(" KBS ")
+      ])
     ])
   }
 ]
