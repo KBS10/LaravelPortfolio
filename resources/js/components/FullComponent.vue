@@ -3,7 +3,6 @@
         <HeaderComponent></HeaderComponent>
         <full-page ref="fullpage" :options="options" id="fullpage">
             <div class="section">
-
                 <HomeComponent/>
             </div>
             <div class="section">
@@ -47,7 +46,7 @@ export default {
                 licenseKey: '',
                 menu: "#menu",
                 anchors: ['page1', 'page2', 'page3','page4','page5'],
-                sectionsColor: ['#41b883', '#ff5f45', '#0798ec','#ffffff','#ff5f45']
+                sectionsColor: ['#fffffff', '#fffffff', '#fffffff','#fffffff','#000000']
             }
         }
     },
@@ -59,5 +58,4 @@ export default {
 }
 </script>
 <style>
-
 </style>
