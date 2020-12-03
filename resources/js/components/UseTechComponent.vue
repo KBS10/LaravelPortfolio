@@ -42,25 +42,4 @@ export default {
     display : block;
     margin: 0 auto;
 }
-#vue{
-    display : inline-block;
-    width: 350px;
-    height: 200px;
-    background-image: url("../../imgs/vue.png");
-    background-repeat: no-repeat;
-}
-#html{
-    display : inline-block;
-    width: 350px;
-    height: 200px;
-    background-image: url("../../imgs/html.png");
-    background-repeat: no-repeat;
-}
-#android{
-    display : inline-block;
-    background-image: url("../../imgs/android.png");
-    width: 250px;
-    height: 100px;
-    background-repeat: no-repeat;
-}
 </style>

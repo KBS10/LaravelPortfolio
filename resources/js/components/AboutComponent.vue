@@ -1,33 +1,45 @@
 <template>
     <div id="AboutComponent">
         <div id="About"/>
-
         <div id="content">
-            <div id="leftAbout">
-                <ul id="About_ul">
-                    <li>N A M E_ 김범수</li>
-                    <li>D A T E_ B I R T H_ 1998. 05. 27</li>
-                    <li>BLOOD_GROUPS_ B형</li>
-                    <li>M O T O_ 하고싶은대로 살자</li>
-                    <li>H O B B Y_  맛집탐방</li>
-                </ul>
+            <div id="leftContent">
+                <div id="Me"/>
+                <div id="intro">
+                    <div>HELLO!</div>
+                    <div>I'm Beomsoo Kim</div>
+                    <div id="japanese"> 私はキムボムスです。</div>
+                </div>
             </div>
-            <div id="rightAbout">
-                <p>아래의 연락처로 문자 또는 메일을 주시면 됩니다.</p>
-                <table>
-                    <tr>
-                        <td><div id="ImgPhone"/></td>
-                        <td><div id="ImgMessage"/></td>
-                    </tr>
-                    <tr>
-                        <td>010 - 4922 - 7711</td>
-                        <td>gimbeomsu59@gmail.com</td>
-                    </tr>
-                </table>
+            <div id="rightContent">
+                <div id="profile">
+                    <div id="category1">PROFILE</div>
+                    <div>Beomsoo Kim / 김범수</div>
+                    <div id="phoneNumber">
+                        010 - 4922 - 7711
+                        <span id="block1"> | </span>
+                        gimbeomsu59@gmail.com
+                        <span id="block2"> | </span>
+                        대구시 동구 거주
+                    </div>
+                </div>
+
+                <div id="projects">
+                    <div id="category2">PROJECTS</div>
+                    <div id="year2019">2019</div>
+                        <div>Java "Gochi" 미니 프로젝트</div>
+                    <div id="year2020">2020</div>
+                        <div>Front End(Vue) "Kimino" 프로젝트</div>
+                        <div id="syder">Android "SYDER" 프로젝트(실패작)</div>
+                        <div>Front End(Vue) "Follow-Me" 프로젝트현재 진행 중</div>
+                </div>
+
+                <div id="skills">
+                    <div id="category3">SKILLS</div>
+                    <div id="language"></div>
+                </div>
             </div>
+
         </div>
-
-
     </div>
 </template>
 
@@ -48,44 +60,50 @@ export default {
     width: 200px;
     height: 75px;
 }
-
 #content{
-    display: inline-block;
-    margin: 0 auto;
-    width: 1000px;
-}
-
-#rightAbout{
-    float: right;
-}
-#leftAbout{
+    display : block;
+ }
+#leftContent{
+    display : inline-block;
     float : left;
+    width : 50%;
 }
-#About_ul{
-    display: block;
+#rightContent{
+    display : inline-block;
+    float : right;
+    width : 50%;
 }
-#About_ul > li{
-    margin: 20px;
-    font-size : 1.5rem;
+#Me{
+    margin : 0 auto;
+    background-image: url("../../imgs/Me.png");
+    background-repeat: no-repeat;
+    width : 400px;
+    height : 410px;
 }
-#rightAbout > p {
-    font-size: 1.3rem;
+#intro{
+    margin : 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight : bold;
+}
+#japanese{
+    margin-left : 30px;
+}
+#rightContent{
+    font-weight : bold;
+}
+#category1,#category2,#category3,#block1,#block2{
+    color : #868e96;
+    margin : 20px 0;
 }
 
-#ImgPhone{
-    width : 200px;
-    height : 200px;
-    background-image: url("https://user-images.githubusercontent.com/53847348/100840410-2e945800-34b9-11eb-8a10-0cd88f15d0f2.png");
-    background-repeat: no-repeat;
+#year2019, #year2020, #phoneNumber, #syder{
+    margin : 10px 0;
 }
-#ImgMessage{
-    width : 200px;
-    height : 150px;
-    background-image: url("https://user-images.githubusercontent.com/53847348/100840427-3522cf80-34b9-11eb-8ed6-57e64bb164eb.png");
+#language{
+    background-image: url("../../imgs/language.png");
     background-repeat: no-repeat;
-}
-
-#rightAbout > table {
-    font-size: 1.2em;
+    width: 370px;
+    height: 38px;
 }
 </style>

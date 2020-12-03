@@ -128,6 +128,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AboutComponent",
   mounted: function mounted() {
@@ -406,12 +418,13 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#About{\n    float : top;\n    margin: 0 auto;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100836245-4fa57a80-34b2-11eb-8010-f63ead35de63.png\");\n    background-repeat: no-repeat;\n    width: 200px;\n    height: 75px;\n}\n#content{\n    display: inline-block;\n    margin: 0 auto;\n    width: 1000px;\n}\n#rightAbout{\n    float: right;\n}\n#leftAbout{\n    float : left;\n}\n#About_ul{\n    display: block;\n}\n#About_ul > li{\n    margin: 20px;\n    font-size : 1.5rem;\n}\n#rightAbout > p {\n    font-size: 1.3rem;\n}\n#ImgPhone{\n    width : 200px;\n    height : 200px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100840410-2e945800-34b9-11eb-8a10-0cd88f15d0f2.png\");\n    background-repeat: no-repeat;\n}\n#ImgMessage{\n    width : 200px;\n    height : 150px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100840427-3522cf80-34b9-11eb-8ed6-57e64bb164eb.png\");\n    background-repeat: no-repeat;\n}\n#rightAbout > table {\n    font-size: 1.2em;\n}\n", ""]);
+exports.push([module.i, "\n#About{\n    float : top;\n    margin: 0 auto;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100836245-4fa57a80-34b2-11eb-8010-f63ead35de63.png\");\n    background-repeat: no-repeat;\n    width: 200px;\n    height: 75px;\n}\n#content{\n    display : block;\n}\n#leftContent{\n    display : inline-block;\n    float : left;\n    width : 50%;\n}\n#rightContent{\n    display : inline-block;\n    float : right;\n    width : 50%;\n}\n#Me{\n    margin : 0 auto;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/Me.png */ "./resources/imgs/Me.png")) + ");\n    background-repeat: no-repeat;\n    width : 400px;\n    height : 410px;\n}\n#intro{\n    margin : 0 auto;\n    font-size: 1.5em;\n    text-align: center;\n    font-weight : bold;\n}\n#japanese{\n    margin-left : 30px;\n}\n#rightContent{\n    font-weight : bold;\n}\n#category1,#category2,#category3,#block1,#block2{\n    color : #868e96;\n    margin : 20px 0;\n}\n#year2019, #year2020, #phoneNumber, #syder{\n    margin : 10px 0;\n}\n#language{\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/language.png */ "./resources/imgs/language.png")) + ");\n    background-repeat: no-repeat;\n    width: 370px;\n    height: 38px;\n}\n", ""]);
 
 // exports
 
@@ -502,13 +515,12 @@ exports.push([module.i, "\n#MyProject{\n    float : top;\n    margin: 0 auto;\n 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#UseTechComponent{\n    margin: 0 auto;\n    width: 1200px;\n}\n#UseTech{\n    margin: 0 auto;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100836327-7663b100-34b2-11eb-81f5-0740c89d9461.png\");\n    background-repeat: no-repeat;\n    width: 200px;\n    height: 80px;\n}\n#Languages{\n    width: 350px;\n    height: 200px;\n    background-image: url(\"https://github-readme-stats.vercel.app/api/top-langs/?username=KBS10&layout=compact&count_private=true&langs_count=30&hide=Python\");\n    background-repeat: no-repeat;\n}\n#UseTech_Content{\n    display : block;\n    margin: 0 auto;\n}\n#vue{\n    display : inline-block;\n    width: 350px;\n    height: 200px;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/vue.png */ "./resources/imgs/vue.png")) + ");\n    background-repeat: no-repeat;\n}\n#html{\n    display : inline-block;\n    width: 350px;\n    height: 200px;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/html.png */ "./resources/imgs/html.png")) + ");\n    background-repeat: no-repeat;\n}\n#android{\n    display : inline-block;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/android.png */ "./resources/imgs/android.png")) + ");\n    width: 250px;\n    height: 100px;\n    background-repeat: no-repeat;\n}\n", ""]);
+exports.push([module.i, "\n#UseTechComponent{\n    margin: 0 auto;\n    width: 1200px;\n}\n#UseTech{\n    margin: 0 auto;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100836327-7663b100-34b2-11eb-81f5-0740c89d9461.png\");\n    background-repeat: no-repeat;\n    width: 200px;\n    height: 80px;\n}\n#Languages{\n    width: 350px;\n    height: 200px;\n    background-image: url(\"https://github-readme-stats.vercel.app/api/top-langs/?username=KBS10&layout=compact&count_private=true&langs_count=30&hide=Python\");\n    background-repeat: no-repeat;\n}\n#UseTech_Content{\n    display : block;\n    margin: 0 auto;\n}\n", ""]);
 
 // exports
 
@@ -2238,35 +2250,63 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "About" } }),
       _vm._v(" "),
       _c("div", { attrs: { id: "content" } }, [
-        _c("div", { attrs: { id: "leftAbout" } }, [
-          _c("ul", { attrs: { id: "About_ul" } }, [
-            _c("li", [_vm._v("N A M E_ 김범수")]),
+        _c("div", { attrs: { id: "leftContent" } }, [
+          _c("div", { attrs: { id: "Me" } }),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "intro" } }, [
+            _c("div", [_vm._v("HELLO!")]),
             _vm._v(" "),
-            _c("li", [_vm._v("D A T E_ B I R T H_ 1998. 05. 27")]),
+            _c("div", [_vm._v("I'm Beomsoo Kim")]),
             _vm._v(" "),
-            _c("li", [_vm._v("BLOOD_GROUPS_ B형")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("M O T O_ 하고싶은대로 살자")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("H O B B Y_  맛집탐방")])
+            _c("div", { attrs: { id: "japanese" } }, [
+              _vm._v(" 私はキムボムスです。")
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { attrs: { id: "rightAbout" } }, [
-          _c("p", [_vm._v("아래의 연락처로 문자 또는 메일을 주시면 됩니다.")]),
+        _c("div", { attrs: { id: "rightContent" } }, [
+          _c("div", { attrs: { id: "profile" } }, [
+            _c("div", { attrs: { id: "category1" } }, [_vm._v("PROFILE")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Beomsoo Kim / 김범수")]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "phoneNumber" } }, [
+              _vm._v(
+                "\n                    010 - 4922 - 7711\n                    "
+              ),
+              _c("span", { attrs: { id: "block1" } }, [_vm._v(" | ")]),
+              _vm._v(
+                "\n                    gimbeomsu59@gmail.com\n                    "
+              ),
+              _c("span", { attrs: { id: "block2" } }, [_vm._v(" | ")]),
+              _vm._v("\n                    대구시 동구 거주\n                ")
+            ])
+          ]),
           _vm._v(" "),
-          _c("table", [
-            _c("tr", [
-              _c("td", [_c("div", { attrs: { id: "ImgPhone" } })]),
-              _vm._v(" "),
-              _c("td", [_c("div", { attrs: { id: "ImgMessage" } })])
+          _c("div", { attrs: { id: "projects" } }, [
+            _c("div", { attrs: { id: "category2" } }, [_vm._v("PROJECTS")]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "year2019" } }, [_vm._v("2019")]),
+            _vm._v(" "),
+            _c("div", [_vm._v('Java "Gochi" 미니 프로젝트')]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "year2020" } }, [_vm._v("2020")]),
+            _vm._v(" "),
+            _c("div", [_vm._v('Front End(Vue) "Kimino" 프로젝트')]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "syder" } }, [
+              _vm._v('Android "SYDER" 프로젝트(실패작)')
             ]),
             _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("010 - 4922 - 7711")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("gimbeomsu59@gmail.com")])
+            _c("div", [
+              _vm._v('Front End(Vue) "Follow-Me" 프로젝트현재 진행 중')
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "skills" } }, [
+            _c("div", { attrs: { id: "category3" } }, [_vm._v("SKILLS")]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "language" } })
           ])
         ])
       ])
@@ -14745,25 +14785,25 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/imgs/android.png":
-/*!************************************!*\
-  !*** ./resources/imgs/android.png ***!
-  \************************************/
+/***/ "./resources/imgs/Me.png":
+/*!*******************************!*\
+  !*** ./resources/imgs/Me.png ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/android.png?8930d60a69e2541b173c6a2755a6b5bd";
+module.exports = "/images/Me.png?09ff2eedc4a5917f68187a88e2697a82";
 
 /***/ }),
 
-/***/ "./resources/imgs/html.png":
-/*!*********************************!*\
-  !*** ./resources/imgs/html.png ***!
-  \*********************************/
+/***/ "./resources/imgs/language.png":
+/*!*************************************!*\
+  !*** ./resources/imgs/language.png ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/html.png?e20c3b30ef2856627391bde4f285fcf5";
+module.exports = "/images/language.png?ca88741d41ef1c00dfe7f51b311969a0";
 
 /***/ }),
 
@@ -14775,17 +14815,6 @@ module.exports = "/images/html.png?e20c3b30ef2856627391bde4f285fcf5";
 /***/ (function(module, exports) {
 
 module.exports = "/images/sakura.png?f41ab728c5dfe3e015611f9e7ea5f9e1";
-
-/***/ }),
-
-/***/ "./resources/imgs/vue.png":
-/*!********************************!*\
-  !*** ./resources/imgs/vue.png ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/vue.png?cb62e8acd584ebdd1f7c5d09d7d2bac8";
 
 /***/ }),
 
