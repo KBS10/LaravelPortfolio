@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "swiper": "^6.3.5",
         "vue-fullpage.js": "^0.1.6",
         "vuetify": "^2.3.18"
     }

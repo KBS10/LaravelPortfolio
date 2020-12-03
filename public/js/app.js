@@ -128,10 +128,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AboutComponent",
   mounted: function mounted() {
@@ -241,7 +237,7 @@ __webpack_require__.r(__webpack_exports__);
         licenseKey: '',
         menu: "#menu",
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-        sectionsColor: ['#fffffff', '#fffffff', '#fffffff', '#fffffff', '#000000']
+        sectionsColor: ['#000000', '#fffffff', '#fffffff', '#fffffff', '#000000']
       }
     };
   },
@@ -310,6 +306,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "HomeComponent",
   mounted: function mounted() {
@@ -334,10 +334,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "MyProjectComponent",
   mounted: function mounted() {
     console.log('MyProject mounted.');
+  },
+  methods: {
+    onSwiper: function onSwiper(swiper) {
+      console.log(swiper);
+    },
+    onSlideChange: function onSlideChange() {
+      console.log('slide change');
+    }
   }
 });
 
@@ -381,13 +406,12 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#About{\n    float : top;\n    margin: 0 auto;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100836245-4fa57a80-34b2-11eb-8010-f63ead35de63.png\");\n    background-repeat: no-repeat;\n    width: 200px;\n    height: 75px;\n}\n#ImageMe{\n    display: inline-block;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/Me.png */ "./resources/imgs/Me.png")) + ");\n    background-repeat: no-repeat;\n    width : 200px;\n    height : 500px;\n}\n#ImageTogether{\n    display: block;\n    float : right;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/Together.png */ "./resources/imgs/Together.png")) + ");\n    background-repeat: no-repeat;\n    margin-right : 50px;\n    width : 350px;\n    height : 200px;\n}\n#content{\n    display: inline-block;\n    margin: 0 auto;\n    width: 1000px;\n}\n#rightAbout{\n    float: right;\n}\n#leftAbout{\n    float : left;\n}\n#About_ul{\n    display: block;\n}\n#About_ul > li{\n    margin: 20px;\n    font-size : 1.5rem;\n}\n#rightAbout > p {\n    font-size: 1.3rem;\n}\n#ImgPhone{\n    width : 200px;\n    height : 200px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100840410-2e945800-34b9-11eb-8a10-0cd88f15d0f2.png\");\n    background-repeat: no-repeat;\n}\n#ImgMessage{\n    width : 200px;\n    height : 150px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100840427-3522cf80-34b9-11eb-8ed6-57e64bb164eb.png\");\n    background-repeat: no-repeat;\n}\n#rightAbout > table {\n    font-size: 1.2em;\n}\n", ""]);
+exports.push([module.i, "\n#About{\n    float : top;\n    margin: 0 auto;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100836245-4fa57a80-34b2-11eb-8010-f63ead35de63.png\");\n    background-repeat: no-repeat;\n    width: 200px;\n    height: 75px;\n}\n#content{\n    display: inline-block;\n    margin: 0 auto;\n    width: 1000px;\n}\n#rightAbout{\n    float: right;\n}\n#leftAbout{\n    float : left;\n}\n#About_ul{\n    display: block;\n}\n#About_ul > li{\n    margin: 20px;\n    font-size : 1.5rem;\n}\n#rightAbout > p {\n    font-size: 1.3rem;\n}\n#ImgPhone{\n    width : 200px;\n    height : 200px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100840410-2e945800-34b9-11eb-8a10-0cd88f15d0f2.png\");\n    background-repeat: no-repeat;\n}\n#ImgMessage{\n    width : 200px;\n    height : 150px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100840427-3522cf80-34b9-11eb-8ed6-57e64bb164eb.png\");\n    background-repeat: no-repeat;\n}\n#rightAbout > table {\n    font-size: 1.2em;\n}\n", ""]);
 
 // exports
 
@@ -439,12 +463,13 @@ exports.push([module.i, "\n#HeaderComponent{\n    position: fixed;\n    top: 0;\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#title[data-v-782dcf83]{\n    text-align: center;\n    color: black;\n}\n#sakura[data-v-782dcf83]{\n    width: 800px;\n    height: 500px;\n    background-image: url(\"https://user-images.githubusercontent.com/53847348/100203451-f71c2d80-2f45-11eb-9cc7-dff9a50ebd54.png\");\n    background-repeat: no-repeat;\n}\n\n", ""]);
+exports.push([module.i, "\n#HomeComponent[data-v-782dcf83]{\n    display: block;\n}\n#sakura[data-v-782dcf83]{\n    display: inline-block;\n    width: 50%;\n    height: 500px;\n    margin-top: 100px;\n    float: left;\n    background-image: url(" + escape(__webpack_require__(/*! ../../imgs/sakura.png */ "./resources/imgs/sakura.png")) + ");\n    background-repeat: no-repeat;\n    background-size: 700px  500px;\n}\n#HomeRight[data-v-782dcf83]{\n    margin-top: 100px;\n    display: inline-block;\n    text-align: center;\n    width: 50%;\n    height : 500px;\n    float : right;\n    color: white;\n    border : 1px white;\n}\nh1[data-v-782dcf83]{\n    margin:  0 auto;\n}\n#name[data-v-782dcf83]{\n    font-size: 4rem;\n    font-weight: bold;\n    margin-top: 20%;\n}\n#portfolio[data-v-782dcf83]{\n    font-size: 4rem;\n    font-weight: bold;\n}\n#HomeRight > p[data-v-782dcf83] {\n    font-size: 1.5rem;\n}\n\n", ""]);
 
 // exports
 
@@ -2212,8 +2237,6 @@ var staticRenderFns = [
     return _c("div", { attrs: { id: "AboutComponent" } }, [
       _c("div", { attrs: { id: "About" } }),
       _vm._v(" "),
-      _c("div", { attrs: { id: "ImageMe" } }),
-      _vm._v(" "),
       _c("div", { attrs: { id: "content" } }, [
         _c("div", { attrs: { id: "leftAbout" } }, [
           _c("ul", { attrs: { id: "About_ul" } }, [
@@ -2243,12 +2266,6 @@ var staticRenderFns = [
               _c("td", [_vm._v("010 - 4922 - 7711")]),
               _vm._v(" "),
               _c("td", [_vm._v("gimbeomsu59@gmail.com")])
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", { attrs: { colspan: "2" } }, [
-                _c("div", { attrs: { id: "ImageTogether" } })
-              ])
             ])
           ])
         ])
@@ -2477,9 +2494,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "HomeComponent" } }, [
-      _c("h1", { attrs: { id: "title" } }, [_vm._v("KIM BEOM SOO")]),
+      _c("div", { attrs: { id: "sakura" } }),
       _vm._v(" "),
-      _c("div", { attrs: { id: "sakura" } })
+      _c("div", { attrs: { id: "HomeRight" } }, [
+        _c("div", { attrs: { id: "name" } }, [_vm._v("KIM BEOM SOO")]),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "portfolio" } }, [_vm._v("PORTFOLIO")]),
+        _vm._v(" "),
+        _c("p", { attrs: { id: "introduce" } }, [
+          _vm._v("안녕하세요. 프론트엔드 김범수의 개인 포트폴리오 사이트입니다")
+        ])
+      ])
     ])
   }
 ]
@@ -2512,7 +2537,33 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "MyProjectComponent" } }, [
-      _c("div", { attrs: { id: "MyProject" } })
+      _c("div", { attrs: { id: "MyProject" } }),
+      _vm._v(" "),
+      _c("div", { staticClass: "swiper-container" }, [
+        _c("div", { staticClass: "swiper-wrapper" }, [
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 1")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 2")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 3")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 4")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 5")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 6")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 7")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 8")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 9")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [_vm._v("Slide 10")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-pagination" })
+      ])
     ])
   }
 ]
@@ -14694,28 +14745,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/imgs/Me.png":
-/*!*******************************!*\
-  !*** ./resources/imgs/Me.png ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Me.png?ca049040051d187002756072b78ccdd2";
-
-/***/ }),
-
-/***/ "./resources/imgs/Together.png":
-/*!*************************************!*\
-  !*** ./resources/imgs/Together.png ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Together.png?0b2c640e2346c34ece0f444bd601e745";
-
-/***/ }),
-
 /***/ "./resources/imgs/android.png":
 /*!************************************!*\
   !*** ./resources/imgs/android.png ***!
@@ -14735,6 +14764,17 @@ module.exports = "/images/android.png?8930d60a69e2541b173c6a2755a6b5bd";
 /***/ (function(module, exports) {
 
 module.exports = "/images/html.png?e20c3b30ef2856627391bde4f285fcf5";
+
+/***/ }),
+
+/***/ "./resources/imgs/sakura.png":
+/*!***********************************!*\
+  !*** ./resources/imgs/sakura.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/sakura.png?f41ab728c5dfe3e015611f9e7ea5f9e1";
 
 /***/ }),
 

@@ -1,7 +1,6 @@
 <template>
     <div id="AboutComponent">
         <div id="About"/>
-        <div id="ImageMe"/>
 
         <div id="content">
             <div id="leftAbout">
@@ -23,9 +22,6 @@
                     <tr>
                         <td>010 - 4922 - 7711</td>
                         <td>gimbeomsu59@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div id="ImageTogether"/></td>
                     </tr>
                 </table>
             </div>
@@ -53,23 +49,6 @@ export default {
     height: 75px;
 }
 
-#ImageMe{
-    display: inline-block;
-    background-image: url("../../imgs/Me.png");
-    background-repeat: no-repeat;
-    width : 200px;
-    height : 500px;
-}
-
-#ImageTogether{
-    display: block;
-    float : right;
-    background-image: url("../../imgs/Together.png");
-    background-repeat: no-repeat;
-    margin-right : 50px;
-    width : 350px;
-    height : 200px;
-}
 #content{
     display: inline-block;
     margin: 0 auto;

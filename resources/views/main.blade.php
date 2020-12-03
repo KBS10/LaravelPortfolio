@@ -12,6 +12,11 @@
         <!-- Include after Vue (before closing body) -->
         <script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.min.js"></script>
         <link href="{{ asset('css/sakura.css') }}" type="text/css" rel="stylesheet" >
+{{--        Link Swiper's CSS--}}
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     </head>
     <body>
@@ -21,6 +26,16 @@
         <script>
             $(window).load(function () {
                 $('body').sakura();
+            });
+        </script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
             });
         </script>
         <script src="{{ asset('js/app.js') }}"></script>
