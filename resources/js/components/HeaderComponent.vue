@@ -8,7 +8,7 @@
                     <li> <a href="#page2">{{ items[1] }}</a></li>
                     <li> <a href="#page3">{{ items[2] }}</a></li>
                     <li> <a href="#page4">{{ items[3] }}</a></li>
-                    <li> <a href="#page5">{{ items[4] }}</a></li>
+                    <li> <a href="login">{{ items[4] }}</a></li>
                 </ul>
             </div>
         </nav>
@@ -19,7 +19,7 @@
 export default {
     data: () => ({
         tab   : null,
-        items : ["Home", "MyProject", "UseTech", "About", "CONTACT US"]
+        items : ["Home", "MyProject", "About", "CONTACT US", "Login"]
     }),
     mounted() {
         console.log('HeaderComponent mounted.')
@@ -34,6 +34,7 @@ export default {
         position: fixed;
         top: 0;
         width: 100%;
+        height: 60px;
         background: #000000;
         z-index: 1000;
     }
@@ -45,7 +46,7 @@ export default {
         justify-content: space-between;
     }
     .logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         display: inline-block;
         padding: 0 20px;
         margin-left: 20px;
@@ -65,7 +66,7 @@ export default {
     li a {
         color: white;
         display: block;
-        padding: 10px 20px;
+        padding: 10px ;
     }
     li a:hover{
         color: #F35B66;

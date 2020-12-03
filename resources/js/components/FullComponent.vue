@@ -9,9 +9,6 @@
                 <MyProjectComponent/>
             </div>
             <div class="section">
-                <UseTechComponent/>
-            </div>
-            <div class="section">
                 <AboutComponent/>
             </div>
             <div class="section">
@@ -25,7 +22,6 @@
 import HeaderComponent  from "./HeaderComponent";
 import HomeComponent from "./HomeComponent";
 import MyProjectComponent from "./MyProjectComponent";
-import UseTechComponent from "./UseTechComponent";
 import AboutComponent from "./AboutComponent";
 import ContactUsComponent from "./ContactUsComponent";
 
@@ -35,7 +31,6 @@ export default {
         HeaderComponent,
         HomeComponent,
         MyProjectComponent,
-        UseTechComponent,
         AboutComponent,
         ContactUsComponent
     },
@@ -44,9 +39,9 @@ export default {
         return {
             options: {
                 licenseKey: '',
-                menu: "#menu",
-                anchors: ['page1', 'page2', 'page3','page4','page5'],
-                sectionsColor: ['#000000', '#fffffff', '#fffffff','#fffffff','#000000']
+                menu: "menu",
+                anchors: ['page1', 'page2', 'page3','page4'],
+                sectionsColor: ['#000000', '#fffffff', '#fffffff','#000000']
             }
         }
     },
