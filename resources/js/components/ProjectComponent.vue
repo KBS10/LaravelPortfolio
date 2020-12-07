@@ -15,11 +15,10 @@
 export default {
     name: "Project",
     mounted() {
-        console.log('Project mounted.')
+        // console.log('Project mounted.')
     },
     methods: {
         deleteButton(){
-            console.log("삭제버튼")
         },
     }
 }

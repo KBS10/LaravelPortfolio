@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueFullPage from 'vue-fullpage.js'
 import Router from 'vue-router'
+import store from "./store"
 
 Vue.use(Router)
 Vue.use(VueFullPage)
-
 Vue.component('header-component'    , require('./components/HeaderComponent.vue').default);
 Vue.component('home-component'      , require('./components/HomeComponent.vue').default);
 Vue.component('myproject-component' , require('./components/MyProjectComponent.vue').default);
@@ -16,4 +16,5 @@ Vue.component('login-component'      , require('./components/FullComponent.vue')
 
 new Vue({
     el: "#app",
+    store,
 })

@@ -24,7 +24,7 @@
 export default {
     name: "ContactUsComponent",
     mounted() {
-        console.log('Cointact Us mounted.')
+        // console.log('Cointact Us mounted.')
     },
 }
 </script>

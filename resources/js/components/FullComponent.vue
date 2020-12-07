@@ -24,7 +24,7 @@ import HomeComponent from "./HomeComponent";
 import MyProjectComponent from "./MyProjectComponent";
 import AboutComponent from "./AboutComponent";
 import ContactUsComponent from "./ContactUsComponent";
-
+import axios from "axios";
 
 export default {
     components : {
@@ -37,6 +37,7 @@ export default {
     name: "FullComponent",
     data(){
         return {
+            data : "",
             options: {
                 licenseKey: '',
                 menu: "menu",
@@ -46,9 +47,19 @@ export default {
         }
     },
     mounted() {
-        console.log('full-page mounted.')
+        this.axios();
     },
     methods:{
+        axios(){
+            axios.post('http://localhost:8000/Check')
+                .then((response) =>{
+                    this.$store.state.CheckUser = response.data;
+                    console.log(this.$store.state.CheckUser)
+                })
+                .catch(function(error){
+                    console.log(error)
+                })
+        }
     }
 }
 </script>

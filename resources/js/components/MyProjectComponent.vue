@@ -33,7 +33,7 @@ export default {
         project
     },
     mounted() {
-        console.log('MyProject mounted.')
+        // console.log('MyProject mounted.')
     },
     methods: {
     },

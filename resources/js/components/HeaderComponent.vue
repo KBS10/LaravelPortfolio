@@ -8,7 +8,7 @@
                     <li> <a href="#page2">{{ items[1] }}</a></li>
                     <li> <a href="#page3">{{ items[2] }}</a></li>
                     <li> <a href="#page4">{{ items[3] }}</a></li>
-                    <li> <a href="login">{{ items[4] }}</a></li>
+                    <li> <a href="login" div="login">{{ items[4] }}</a></li>
                 </ul>
             </div>
         </nav>
@@ -21,11 +21,27 @@ export default {
         tab   : null,
         items : ["Home", "MyProject", "About", "CONTACT US", "Login"]
     }),
+    created(){
+    },
     mounted() {
-        console.log('HeaderComponent mounted.')
+        // console.log('HeaderComponent mounted.')
+        setTimeout(() => {
+            this.checkUser();
+        },1500)
     },
     methods: {
-
+        checkUser(){
+            console.log(this.$store.state.CheckUser)
+            if(this.$store.state.CheckUser === 1){
+                const login = document.getElementById('login');
+                this.items[4] = "Logout";
+                console.log(this.items[4])
+                login.innerHTML += this.items[4];
+            }else{
+                this.items[4] = "Login";
+                console.log(this.items[4])
+            }
+        }
     },
 }
 </script>

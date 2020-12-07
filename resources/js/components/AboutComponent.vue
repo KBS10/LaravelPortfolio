@@ -47,7 +47,7 @@
 export default {
     name: "AboutComponent",
     mounted() {
-        console.log('About mounted.')
+        // console.log('About mounted.')
     },
 }
 </script>

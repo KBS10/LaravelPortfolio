@@ -13,7 +13,7 @@
 export default {
     name: "HomeComponent",
     mounted() {
-        console.log('Home mounted.')
+        // console.log('Home mounted.')
     },
 }
 </script>
