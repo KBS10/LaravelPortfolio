@@ -3,13 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Portfolio;
+use App\Models\Portfolio;
 
 class BlogController extends Controller
 {
 
+    public function __invoke()
+    {
+        return view("blog.create");
+//        return view('user.profile', ['user' => User::findOrFail($id)]);
+    }
+
     public function create(){
-        return view("blogs.create");
     }
 
     public function store(Request $request){

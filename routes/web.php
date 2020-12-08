@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::post('/login', function(Request $request){
     }
 });
 
-Route::post('/Check',function(Request $request){
+Route::get('/Check',function(Request $request){
     $value = $request->session()->get('Login');
     if ($request->session()->has('Login')) {
         return $value;
@@ -46,11 +47,12 @@ Route::post('/Check',function(Request $request){
     }
 });
 
-Route::prefix('dashboard')->middleware('auth')->group(function(){
-    Route::get('/', 'DashboardController@index');
-
-    Route::get('/portfolio', 'DashboardController@portfolio');
+Route::get('/Logout', function(Request $request){
+    $value = $request->session()->flush();
+    return view('login', $value);
 });
 
+
+Route::get('/create', BlogController::class);
 
 //Route::get('/create', 'BlogController@create')->name('blogs.create')->middleware('auth');

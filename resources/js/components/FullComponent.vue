@@ -51,7 +51,7 @@ export default {
     },
     methods:{
         axios(){
-            axios.post('http://localhost:8000/Check')
+            axios.get('http://localhost:8000/Check')
                 .then((response) =>{
                     this.$store.state.CheckUser = response.data;
                     console.log(this.$store.state.CheckUser)

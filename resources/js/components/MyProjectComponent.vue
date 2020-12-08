@@ -15,6 +15,8 @@
             <div class="swiper-pagination"></div>
         </div>
         <div id="button">
+<!--             v-if="this.$store.state.CheckUser === 1"-->
+
             <button id="create" onclick="window.location.href='create'">글쓰기</button>
         </div>
     </div>
@@ -28,6 +30,7 @@ export default {
         return{
             swiper_List : [1,2,3,4,5],
         }
+
     },
     components : {
         project

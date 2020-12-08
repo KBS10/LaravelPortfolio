@@ -13,6 +13,7 @@ Vue.component('about-component'     , require('./components/AboutComponent.vue')
 Vue.component('contact-component'   , require('./components/ContactUsComponent.vue').default);
 Vue.component('full-component'      , require('./components/FullComponent.vue').default);
 Vue.component('login-component'      , require('./components/FullComponent.vue').default);
+Vue.component('create-component'      , require('./components/createComponent.vue').default);
 
 new Vue({
     el: "#app",

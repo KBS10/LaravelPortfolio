@@ -6,6 +6,7 @@
             <div id="board">Board</div>
         </div>
         <div id="buttons">
+<!--             v-if="this.$store.state.CheckUser === 1">-->
             <button id="delete" @click="deleteButton()">삭제</button>
         </div>
     </div>

@@ -8,7 +8,7 @@
                     <li> <a href="#page2">{{ items[1] }}</a></li>
                     <li> <a href="#page3">{{ items[2] }}</a></li>
                     <li> <a href="#page4">{{ items[3] }}</a></li>
-                    <li> <a href="login" div="login">{{ items[4] }}</a></li>
+                    <li> <a href="login" id="login" @click="Logout()">{{ items[4] }}</a></li>
                 </ul>
             </div>
         </nav>
@@ -16,10 +16,12 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
     data: () => ({
         tab   : null,
-        items : ["Home", "MyProject", "About", "CONTACT US", "Login"]
+        items : ["Home", "MyProject", "About", "Contact Us", "Login"]
     }),
     created(){
     },
@@ -36,11 +38,21 @@ export default {
                 const login = document.getElementById('login');
                 this.items[4] = "Logout";
                 console.log(this.items[4])
-                login.innerHTML += this.items[4];
+                login.innerHTML = this.items[4];
             }else{
                 this.items[4] = "Login";
                 console.log(this.items[4])
             }
+        },
+        Logout(){
+            axios.get('http://localhost:8000/Logout')
+                .then((response) =>{
+                    this.$store.state.CheckUser = response.data;
+                    console.log(this.$store.state.CheckUser)
+                })
+                .catch(function(error){
+                    console.log(error)
+                })
         }
     },
 }
