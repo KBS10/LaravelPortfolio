@@ -4,7 +4,15 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="list in swiper_List" :key="list"><project></project></div>
+                <div class="swiper-slide" v-for="list in this.$store.state.board" :key="list">
+
+                    <div id="project_Content">
+                        <img id="images" v-bind:src="list.image">
+                        <div id="title">{{ list.title}}</div>
+                        <div id="content">{{ list.content}}</div>
+                    </div>
+
+                </div>
             </div>
 
             <!-- 네비게이션 -->
@@ -23,17 +31,13 @@
 </template>
 
 <script>
-import project from "./ProjectComponent.vue"
 export default {
     name: "MyProjectComponent",
     data(){
         return{
-            swiper_List : [1,2,3,4,5],
+            // swiper_List : [1,2,3,4,5],
         }
 
-    },
-    components : {
-        project
     },
     mounted() {
         // console.log('MyProject mounted.')
@@ -70,5 +74,41 @@ export default {
 .swiper-pagination{
     display : block;
     z-index: -10;
+}
+
+#project_Content{
+    display : inline-block;
+    width : 100%;
+}
+#images{
+    margin : 0 auto;
+    margin-left : 100px;
+    border : 1px solid;
+    width : 300px;
+    height : 250px;
+}
+#title{
+    text-align : center;
+    font-size : 1.2em;
+    font-weight : bold;
+    margin: 10px auto;
+    border : 1px solid;
+    width : 300px;
+    height : 50px;
+}
+#content{
+    margin : 0 auto;
+    border : 1px solid;
+    width : 300px;
+    height : 150px;
+}
+#buttons{
+    width : 90%;
+    height : 10px;
+    margin : 10px;
+}
+#delete{
+    float : right;
+    z-index: 1000;
 }
 </style>
