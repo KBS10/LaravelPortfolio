@@ -52,6 +52,9 @@ export default {
 }
 </script>
 <style>
+#AboutComponent{
+    width: 100%;
+}
 #About{
     float : top;
     margin: 0 auto;

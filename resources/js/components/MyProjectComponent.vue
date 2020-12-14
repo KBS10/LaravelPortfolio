@@ -4,12 +4,12 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="list in this.$store.state.board" :key="list">
 
+                <div class="swiper-slide" v-for="list in this.$store.state.board" :key="list">
                     <div id="project_Content">
                         <img id="images" v-bind:src="list.image">
                         <div id="title">{{ list.title}}</div>
-                        <div id="content">{{ list.content}}</div>
+                        <div id="subcontent">{{ list.content}}</div>
                     </div>
 
                 </div>
@@ -78,13 +78,12 @@ export default {
 
 #project_Content{
     display : inline-block;
-    width : 100%;
+    width : 500px;
+    height : 500px;
 }
 #images{
     margin : 0 auto;
-    margin-left : 100px;
-    border : 1px solid;
-    width : 300px;
+    width : 100%;
     height : 250px;
 }
 #title{
@@ -96,7 +95,7 @@ export default {
     width : 300px;
     height : 50px;
 }
-#content{
+#subcontent{
     margin : 0 auto;
     border : 1px solid;
     width : 300px;
